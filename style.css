@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+   
+    color: white;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #20b35d;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.mage-tex {
+    padding-left: 40px;
+}
+.mage-tex > h2, h5 {
+    padding-left:1px;
+}
+.main-header h1 {
+    text-align: center;
+    padding-left: 30%;
+}
+.main-header, h2, h4 {
+    padding-left: 0px;
+}
+.main-header img {
+    border-radius: 50%;
+    border: 5px solid #20b35d;
+   
+}
+
+.main-content {
+    width: 80%;
+    margin: auto;
+    padding: 30px; 
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:  #20b35d;
+}
+.main-content p {
+    margin: 2px;
+    color: white;
+}
+.all-skills h2 {
+    text-align: center;
+}
+.all-skills {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.each-skills {
+    display: flex;
+    padding: 5px;
+   justify-content: space-evenly;
+}
+.each-skills h3 {
+    color: black;
+    text-align: center;
+}
+.graph, .content, .software {
+    flex-basis: 44%;
+    border-radius: 20px;
+    margin:1%;
+    text-align: left;
+    background-color:  #20b35d;
+    padding: 10px;
+    cursor: pointer;
+   
+    
+}
+.each-skills p {
+    color: white;
+    margin: 2px;
+}
+.both-social_experience {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.social-experience {
+    border-radius: 20px;
+    background-color: #20b35d;
+    padding: 25px;
+    cursor: pointer;
+    display:flex;
+}
+.social-experience h3 {
+    color: black;
+    align-items: center;
+}
+.social-experience p {
+    color: white;
+    margin: 2px;
+}
+
+.experience, .social {
+    padding: 10px;
+    width: 50%;
+    margin:1%;
+ 
+}
+.social ul li {
+    list-style: none;
+ 
+    padding: 8px 12px;
+    position: relative;
+}
+.social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.social ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: green;
+    display: block;
+    margin: auto;
+}
+.social ul li:hover::after {
+    width: 40px;
+}
+.main-footer {
+   
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    margin-top: 350px;
+  
+}
+.my-resume1 {
+    margin-left: 500px;
+}
+.my-resume2 {
+    margin-left: 300px;
+}
+.about-me {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+.about-me h3 {
+    margin: auto;
+}
+.about-me ol li {
+    padding-left: 30px;
+    margin: 2px;
+    list-style: none;
+    color: white;
+}
+
+
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid white;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+   
+    cursor: pointer;
+    align-items: center;
+
+}
+.hero-btn:hover{
+    border: 3px solid white;
+    background:  #20b35d;
+    transition: 1s;
+}
+.hero-btn a {
+    padding-left: 50%;
+}
+
+/* this section is for the about me*/
+.project-main {
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 15px;
+    text-align: center;
+    background-color: #20b35d;
+    border-radius: 20px;
+
+}
+.pro-header {
+    padding:0;
+    margin: 15px;
+    color: white;
+}
+.pro-header p {
+    padding-top: 5px;
+}
+.pro-body ol li {
+    
+    padding-bottom: 20px;
+    
+}
+.pro-body ol li a {
+    text-decoration: none;
+}
+.pro-body ol li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f3f4f4;
+    display: block;
+    margin: auto;
+}
+.pro-body ol li a:hover::after{
+    width: 250px;
+}
+
+/* this section is to the media queries*/
+@media(max-width: 480px) {
+   
+    .header {  
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin: 3%;
+    }
+    .main-header {
+        display: block;
+    }
+    .main-header h1 {
+        padding-right: 45px;
+    }
+    .main-header img {
+        width: 150px;
+        
+    }
+    .mage-tex {
+        padding-left: 35%;
+        padding-bottom: 20px;
+    }
+    
+    .main-content {
+        width: 80%;
+        
+    }
+    .main-content p {
+        text-align: left;
+    }
+    .each-skills {
+        display: block;
+        width: 100%;
+    }
+    .each-skills p {
+        text-align: left;
+    } 
+    .each-skills h3 {
+        padding-bottom: 0;
+    }
+    .social-experience {
+        display: block;
+        margin:1%;
+    }
+    .social-experience h3 {
+        color: black;
+        align-items: center;
+    }
+    
+    .experience p {
+        text-align: left;
+        width: 190%;
+        padding: 0;
+    }
+    .my-resume1 {
+        margin-left: 60px;
+    }
+    .my-resume2 {
+        margin-left: 50px;
+    }
+    .main-footer {
+        margin: 3%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
